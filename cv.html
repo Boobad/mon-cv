@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <title>CV - Bakary Diallo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container" id="cv">
+        <!-- Section Gauche -->
+        <div class="left-section">
+            <div class="cv-sidebar">
+                <img src="booba.jpg" alt="Photo de profil">
+             </div>
+            <div class="triangle"></div>
+            <div class="ligne1">
+                <div class="point-contact pt-titre"></div>
+                <div class="point-num pt-items"></div>
+                <div class="point-mail pt-items"></div>
+                <div class="point-loca pt-items"></div>
+                <div class="point-lang pt-titre"></div>
+                <div class="point-bam pt-items"></div>
+                <div class="point-fran pt-items"></div>
+                <div class="point-ang pt-items"></div>
+                <div class="point-lois pt-titre"></div>
+                <div class="point-lec pt-items"></div>
+                <div class="point-spo pt-items"></div>
+                <div class="point-dess pt-items"></div>
+            </div>
+            <div class="contact">
+                <h3><i class="fas fa-address-book"></i> Contact</h3>
+                <p><i class="fas fa-square-phone"></i> +223 74309564</p>
+                <p><i class="fas fa-envelope"></i> bakarydiallo312@gmail.com</p>
+                <p><i class="fas fa-house-user"></i> Boukassoumbougou</p>
+            </div>
+            <div class="languages">
+                <h3><i class="fas fa-language"></i> Langues</h3>
+                <p>Bambara : <span>Excellent</span></p>
+                <p>Français : <span>Très bien</span></p>
+                <p>Anglais : <span>Passable</span></p>
+            </div>
+            <div class="hobbies">
+                <h3><i class="fas fa-star"></i> Loisirs</h3>
+                <ul>
+                    <li>Lecture</li>
+                    <li>Sport</li>
+                    <li>Dessin</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Section Droite -->
+        <div class="right-section">
+            <div class="triangle1"></div>
+             <div class="point-tch pt-items-right"></div>
+             <div class="point-html pt-items-right"></div>
+             <div class="point-lara pt-items-right"></div>
+             <div class="point-js pt-items-right"></div>
+            <div class="rectangle1">
+                <div class="header">    
+            <div class="point-nom pt-titre-right"></div>
+            <div class="point-comp-titre-right"></div>
+             <div class="point-apro pt-titre-right"></div>
+             <div class="point-dip pt-titre-right"></div>
+             <div class="point-cent pt-titre-right"></div>
+             <div class="point-dev pt-items-right"></div>
+                    <h1>BAKARY DIALLO</h1>
+                    <p>Développeur Web/Mobile</p>
+                </div>
+            </div>
+            <div class="about">
+                <h3><i class="fas fa-user"></i>A PROPOS DE MOI</h3>
+                <p>Je suis un apprenti en développement web et mobile passionné Avec une première expérience en Laravel et la gestion des bases de données SQL, je crée des applications modernes et performantes. Mon objectif est d’apporter des solutions innovantes aux entreprises et à l’administration publique.</p>
+            </div>
+            <div class="ed-sk-bts">
+                <div class="education">
+                    <h3><i class="fas fa-graduation-cap"></i> Diplômes & Formation</h3>
+                        <p>2023-2024 : Licence en Informatique</p>
+                        <p>2022-2023 : DUT en Informatique</p>
+                        <p>2020-2021 : Bac en Sciences Éco</p>
+                </div>
+                <div class="centre">
+                    <h3><i class="fas fa-crosshairs"></i>CENTRE D’INTERET</h3>
+                        <p>Développement d’applications web et mobiles</p>
+                        <p>Technologies cloud & cybersécurité</p>
+                </div>
+                <div class="skills">
+                    <h3><i class="fas fa-code"></i> Compétences</h3>
+                    <div class="skill">
+                        <p>HTML/CSS</p>
+                        <div class="bar"><div class="progress html"></div></div>
+                    </div>
+                    <div class="skill">
+                        <p>Laravel</p>
+                        <div class="bar"><div class="progress laravel"></div></div>
+                    </div>
+                    <div class="skill">
+                        <p>Javascript</p>
+                        <div class="bar"><div class="progress java"></div></div>
+                    </div>
+                </div>
+                <div class="buttons" id="hide">
+                    <input type="color" value="#003366" onchange="changeColor(this.value)">
+                    <button id="downloadBtn">Télécharger PDF</button>
+                    <button id="goBack" class="btn-retour"> Retour à l'accueil</button>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

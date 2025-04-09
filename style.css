@@ -1,0 +1,923 @@
+:root{
+    --bgcl: #003366;
+}
+/* Global */
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    width: 595px;
+    height: 842px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.containe{
+    box-sizing: border-box;
+    width: 40%;
+    margin: 0 auto;
+    height: 100vh;
+    color: #fff;
+    background-image: url(fond.jpg);
+    background-size: cover;
+    animation: bganim infinite 2s   alternate-reverse ease-in-out;
+}
+@keyframes bganim{
+    0%{
+        background-size: contain;
+        /* transform: scale(1.5); */
+    }
+    50%{
+        background-size: cover;
+        /* transform: scale(1); */
+    }
+    100%{
+        background-size: contain;
+        /* transform: scale(1.5); */
+    };
+}
+/* Section gauche */
+.triangle{
+    position: absolute;
+    left: -80px;
+    top: -10px;
+    margin-top: 60px;
+    right: -30px;
+    width: 0;
+    margin-top: 0;
+    height: 15px;
+    border-left: -5px solid transparent;
+    border-right: 389px solid transparent;
+    border-top: 250px solid rgb(134, 134, 156);
+}
+
+.cv-sidebar{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+}
+.ligne1{
+    position: absolute;
+    height:668px ;
+    border-left: 3px solid rgb(134, 134, 156);
+    bottom: 0;
+}
+
+
+
+.cv-sidebar img {
+    width: 99px;
+    height: 100px;
+    border-radius: 80% 80% 80% 0;
+    border: rgb(134, 134, 156) solid 4px;
+    padding: 0;
+    margin-top: 21px;
+    margin-bottom: -22px;
+    
+}
+
+.left-section {
+    position: relative;
+    width: 37%;
+    background: var(--bgcl);
+    color: white;
+    padding: 1rem;
+    overflow: hidden;
+
+}
+
+.contact, .languages, .hobbies {
+    margin-top: 100px;
+    z-index: 1;
+    position: relative;
+    top: 45px;
+    right: -20px;
+}
+
+.contact p, .languages p {
+    font-size: 14px;
+}
+
+.hobbies ul {
+    list-style: none;
+    padding: 0;
+}
+
+.hobbies li {
+    margin: 5px 0;
+}
+
+/* Section droite */
+.right-section {
+    position: relative;
+    width: 50%;
+    padding: 50px;
+    margin-left: 18px;
+    padding-right: 20px;
+    border-left: 3px solid var(--bgcl)
+}
+.triangle1{
+    position: absolute;
+    width: 24%;
+    left: 292px;
+    top: 775px;
+    height: 0;
+    bottom: 0;
+    clip-path: polygon(60% 60%, 60% 0, 0 60%);
+    border-bottom: 113px solid var(--bgcl);
+}
+/* point gauche */
+.point-contact{
+    position: absolute;
+    top: 100px;
+    left: -15px;
+}
+.point-num{
+    position: absolute;
+    top: 138px;
+    left: -7px;
+
+    /* top: 45px; */
+}
+.point-mail{
+    position: absolute;
+    top: 169px;
+    left: -7px;
+
+    /* top: 45px; */
+}
+.point-loca{
+    position: absolute;
+    top: 196px;
+    left: -7px;
+    /* top: 45px; */
+}
+.point-lang{
+    position: absolute;
+    top: 316px;
+    left: -15px;
+    /* top: 45px; */
+}
+.point-bam{
+    position: absolute;
+    top: 353px;
+    left: -7px;
+    /* top: 45px; */
+}
+.point-fran{
+    position: absolute;
+    top: 380px;
+    left: -7px;
+    /* top: 45px; */
+}
+.point-ang{
+    position: absolute;
+    top: 412px;
+    left: -7px;
+    /* top: 45px; */
+}
+.point-lois{
+    position: absolute;
+    top: 530px;
+    left: -15px;
+    /* top: 45px; */
+}
+.point-lec{
+    position: absolute;
+    top: 570px;
+    left: -7px;
+    /* top: 45px; */
+}
+.point-spo{
+    position: absolute;
+    top: 592px;
+    left: -7px;
+    /* top: 45px; */
+}
+.point-dess{
+    position: absolute;
+    top: 618px;
+    left: -7px;
+    /* top: 45px; */
+}
+.about{
+
+    position: absolute;
+    width: 300px;
+    height: 157px;
+    left: 20px;
+    top: 146px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    /* text-align: justify; */
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+
+    color: #000000;
+
+
+}
+
+.header {
+    position: absolute;
+    left: 20px;
+    color: #000911;
+}
+
+.bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    background: var(--bgcl);
+    width: 0;
+    transition: width 1s;
+}
+
+.html { width: 90%; }
+.laravel { width: 75%; }
+.java { width: 60%; }
+
+/* Boutons */
+
+#goBack {
+    margin-top: 17px;
+}
+
+#goBack:hover {
+    background-color: #5a6268;
+}
+.buttons button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: var(--bgcl);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.buttons button:hover {
+    background: var(--bgcl);
+    transform: scale(1.05);
+}
+.rectangle1{
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 330px;
+    height: 100px;
+    background: #D9D9D9;
+}
+.ed-sk-bts{
+    position: absolute;
+    top: 330px;
+    left: 20px;
+    font-size: 13px;
+
+}
+.pt-titre{
+    width: 17px;
+    height: 0px;
+    border: 6px solid #fafcfb;
+    transform: rotate(-90deg);
+    background: #fafcfb;
+    border-radius: 50px;
+
+}
+.pt-items{
+    width: -10px;
+    height: -10px;
+    border: 6px solid #fafcfb;
+    background: #fafcfb;
+    border-radius: 50%;
+}
+.pt-titre-right{
+    width: 22px;
+    height: 0px;
+    border: 6px solid var(--bgcl);
+    transform: rotate(-90deg);
+    background: var(--bgcl);
+    border-radius: 50px;
+}
+.pt-items-right {
+    width: 10px;
+    height: 10px;
+    background: var(--bgcl);
+    border-radius: 50%;
+}
+/* point droit */
+.point-nom{
+    position: absolute;
+    top: 32px;
+    left: -39px;
+    background-color: var(--bgcl);
+
+    /* top: 45px; */
+}
+.point-apro{
+    position: absolute;
+    top: 130px;
+    left: -39px;
+    background-color: var(--bgcl);
+    
+    /* top: 45px; */
+}
+.point-dip{
+    position: absolute;
+    top: 315px;
+    left: -39px;
+    background-color: var(--bgcl);
+    /* top: 45px; */
+}
+.point-cent{
+    position: absolute;
+    top: 437px;
+    left: -39px;
+    background-color: var(--bgcl);
+    /* top: 45px; */
+}
+.point-dev{
+    position: absolute;
+    top: 468px;
+    left: -26px;
+    background-color: var(--bgcl);
+    /* top: 45px; */
+}
+.point-tch{
+    position: absolute;
+    top: 527px;
+    left: -7px;
+    background-color: var(--bgcl);
+    /* top: 45px; */
+}
+.point-comp{
+    position: absolute;
+    top: 737px;
+    left: -39px;
+    background-color: var(--bgcl);
+    /* top: 45px; */
+}
+.point-html{
+    position: absolute;
+    top: 592px;
+    left: -7px;
+    background-color: var(--bgcl);
+    /* top: 45px; */
+}
+.point-lara{
+    position: absolute;
+    top: 646px;
+    left: -7px;
+    background-color: var(--bgcl);
+    /* top: 45px; */
+}
+.point-js{
+    position: absolute;
+    top: 698px;
+    left: -7px;
+    border: #003366;
+    background-color: var(--bgcl);
+    /* top: 45px; */
+}
+/* Responsive */
+@media screen and (max-width: 1024px){
+    .container {
+     width: 574px;
+     height: 940px;
+     display: flex;
+     flex-direction: row; /* Alignement horizontal */
+     .left-section {
+        background-color: #004080;
+        color: white;
+        width: 120%;
+        padding: 20px;
+    }
+    .ligne1{
+       height: 938px;
+    }
+   
+    
+    .right-section{
+        width: 270%;
+        padding: 20px;
+    }
+    
+   .pt-titre{
+       width: 20px;
+       height: 0px;
+   
+   }
+   .pt-items{
+       width: 5px;
+       height: 5px;
+   }
+   .pt-items-right {
+       width: 15px;
+       height: 15px;
+   }
+   .point-contact{
+       top: 25px;
+       left: -18px;
+   }
+   .point-num{
+       top: 61px;
+       left: -10px;
+   
+       /* top: 45px; */
+   }
+   .point-mail{
+       top: 95px;
+       left: -10px;
+   
+       /* top: 45px; */
+   }
+   .point-loca{
+       top: 140px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-lang{
+       top: 193px;
+       left: -17px;
+       /* top: 45px; */
+   }
+   .point-bam{
+       top: 221px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-fran{
+       top: 251px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-ang{
+       top: 280px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-lois{
+       top: 321px;
+       left: -17px;
+       /* top: 45px; */
+   }
+   .point-lec{
+       top: 358px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-spo{
+       top: 381px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-dess{
+       top: 405px;
+       left: -10px;
+       /* top: 45px; */
+   }
+ }
+    
+}
+@media screen and (max-width: 1041px){
+    .container {
+     width: 574px;
+     height: 940px;
+     display: flex;
+     flex-direction: row; /* Alignement horizontal */
+     .left-section {
+        background-color: #004080;
+        color: white;
+        width: 120%;
+        padding: 20px;
+    }
+    .ligne1{
+       height: 916px;
+    }
+   
+    
+    .right-section{
+        width: 270%;
+        padding: 20px;
+    }
+    
+   .pt-titre{
+       width: 20px;
+       height: 0px;
+   
+   }
+   .pt-items{
+       width: 5px;
+       height: 5px;
+   }
+   .pt-items-right {
+       width: 15px;
+       height: 15px;
+   }
+   .point-contact{
+       top: 25px;
+       left: -18px;
+   }
+   .point-num{
+       top: 61px;
+       left: -10px;
+   
+       /* top: 45px; */
+   }
+   .point-mail{
+       top: 95px;
+       left: -10px;
+   
+       /* top: 45px; */
+   }
+   .point-loca{
+       top: 140px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-lang{
+       top: 193px;
+       left: -17px;
+       /* top: 45px; */
+   }
+   .point-bam{
+       top: 221px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-fran{
+       top: 251px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-ang{
+       top: 280px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-lois{
+       top: 321px;
+       left: -17px;
+       /* top: 45px; */
+   }
+   .point-lec{
+       top: 358px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-spo{
+       top: 381px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-dess{
+       top: 405px;
+       left: -10px;
+       /* top: 45px; */
+   }
+ }
+    
+}
+@media screen and (max-width: 700px){
+    .container {
+     width: 574px;
+     height: 940px;
+     display: flex;
+     flex-direction: row; /* Alignement horizontal */
+     .left-section {
+        background-color: #004080;
+        color: white;
+        width: 120%;
+        padding: 20px;
+    }
+    .ligne1{
+       height: 949px;
+    }
+   
+    
+    .right-section{
+        width: 270%;
+        padding: 20px;
+    }
+    
+   .pt-titre{
+       width: 20px;
+       height: 0px;
+   
+   }
+   .pt-items{
+       width: 5px;
+       height: 5px;
+   }
+   .pt-items-right {
+       width: 15px;
+       height: 15px;
+   }
+   .point-contact{
+       top: 25px;
+       left: -18px;
+   }
+   .point-num{
+       top: 61px;
+       left: -10px;
+   
+       /* top: 45px; */
+   }
+   .point-mail{
+       top: 95px;
+       left: -10px;
+   
+       /* top: 45px; */
+   }
+   .point-loca{
+       top: 140px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-lang{
+       top: 193px;
+       left: -17px;
+       /* top: 45px; */
+   }
+   .point-bam{
+       top: 227px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-fran{
+       top: 259px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-ang{
+       top: 289px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-lois{
+       top: 330px;
+       left: -17px;
+       /* top: 45px; */
+   }
+   .point-lec{
+       top: 364px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-spo{
+       top: 389px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-dess{
+       top: 415px;
+       left: -10px;
+       /* top: 45px; */
+   }
+ }
+    
+}
+@media screen and (max-width: 748px){
+    .cv-sidebar img {
+    width: 99px;
+    height: 100px;
+    border-radius: 80% 80% 80% 0;
+    border: white solid 4px;
+    padding: 0;
+    
+}
+    .triangle{
+        position: absolute;
+        left: -98px;
+        top: -76px;
+        right: -30px;
+        width: 0;
+        height: 15px;
+        border-left: -5px solid transparent;
+        border-right: 389px solid transparent;
+        border-top: 250px solid rgb(134, 134, 156);
+    }
+    .container {
+     width: 574px;
+     height: 940px;
+     display: flex;
+     flex-direction: row; /* Alignement horizontal */
+     .left-section {
+        background-color: #004080;
+        color: white;
+        width: 120%;
+        padding: 20px;
+    }
+    .ligne1{
+       height: 1023px;
+    }
+   
+    
+    .right-section{
+        width: 270%;
+        padding: 20px;
+    }
+    
+   .pt-titre{
+       width: 20px;
+       height: 0px;
+   
+   }
+   .pt-items{
+       width: 5px;
+       height: 5px;
+   }
+   .pt-items-right {
+       width: 15px;
+       height: 15px;
+   }
+   .point-contact{
+       top: 25px;
+       left: -18px;
+   }
+   .point-num{
+       top: 61px;
+       left: -10px;
+   
+       /* top: 45px; */
+   }
+   .point-mail{
+       top: 95px;
+       left: -10px;
+   
+       /* top: 45px; */
+   }
+   .point-loca{
+       top: 140px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-lang{
+       top: 193px;
+       left: -17px;
+       /* top: 45px; */
+   }
+   .point-bam{
+       top: 227px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-fran{
+       top: 259px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-ang{
+       top: 289px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-lois{
+       top: 329px;
+       left: -17px;
+       /* top: 45px; */
+   }
+   .point-lec{
+       top: 366px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-spo{
+       top: 390px;
+       left: -10px;
+       /* top: 45px; */
+   }
+   .point-dess{
+       top: 415px;
+       left: -10px;
+       /* top: 45px; */
+   }
+ }
+    
+}
+@media (max-width: 768px) {
+    .container {
+     width: 524px;
+     height: 1120px;
+     display: flex;
+     flex-direction: row; /* Alignement horizontal */
+     
+ }
+ 
+ .left-section {
+     background-color: var(--bgcl);
+     color: white;
+     width: 120%;
+     padding: 20px;
+ }
+ .ligne1{
+    height: 950px;
+ }
+
+ 
+ .right-section{
+     width: 270%;
+     padding: 20px;
+ }
+ 
+.pt-titre{
+    width: 20px;
+    height: 0px;
+
+}
+.pt-items{
+    width: 5px;
+    height: 5px;
+}
+.pt-items-right {
+    width: 15px;
+    height: 15px;
+}
+.point-contact{
+    top: 25px;
+    left: -18px;
+}
+.point-num{
+    top: 61px;
+    left: -10px;
+
+    /* top: 45px; */
+}
+.point-mail{
+    top: 95px;
+    left: -10px;
+
+    /* top: 45px; */
+}
+.point-loca{
+    top: 140px;
+    left: -10px;
+    /* top: 45px; */
+}
+.point-lang{
+    top: 193px;
+    left: -17px;
+    /* top: 45px; */
+}
+.point-bam{
+    top: 231px;
+    left: -10px;
+    /* top: 45px; */
+}
+.point-fran{
+    top: 261px;
+    left: -10px;
+    /* top: 45px; */
+}
+.point-ang{
+    top: 291px;
+    left: -10px;
+    /* top: 45px; */
+}
+.point-lois{
+    top: 332px;
+    left: -17px;
+    /* top: 45px; */
+}
+.point-lec{
+    top: 367px;
+    left: -10px;
+    /* top: 45px; */
+}
+.point-spo{
+    top: 391px;
+    left: -10px;
+    /* top: 45px; */
+}
+.point-dess{
+    top: 417px;
+    left: -10px;
+    /* top: 45px; */
+}
+ }
+@media print{
+    
+.container {
+    display: flex;
+    width: 595px;
+    height: 845px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+}
